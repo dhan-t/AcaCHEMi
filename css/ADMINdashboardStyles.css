@@ -61,7 +61,7 @@ body {
 }
 
 .navButtons {
-  display: -ms-inline-grid;
+  display: -ms-inline-flexbox;
 }
 .navButtons a {
   color: whitesmoke;
