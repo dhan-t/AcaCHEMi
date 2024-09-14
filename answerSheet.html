@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="answerSheetStyle.css" />
+    <link rel="stylesheet" href="style.css">
+    <title> Acachemi | TOPICTITLE - QUIZNUM</title>
+</head>
+
+<body>
+    <div class="sidebarSection">
+        <nav id="sidebar">
+            <button id="toggle-button">
+                <img src="images/burger.png" alt="Menu">
+            </button>
+            <ul class="nav-list">
+                <li id="home"><a href="home.html"><img src="images/home.png"><span> Home</span></a> </li>
+                <li id="learn"><a href="search.html"><img src="images/learn.png"> <span> Learn</span></a> </li>
+                <li id="quiz"><a href="settings.html"><img src="images/quiz.png"><span> Quiz</span></a> </li>
+                <li id="questions"><a href="messages.html"><img src="images/questions.png"><span> Questions</span></a>
+                </li>
+                <li id="profile"><a href="profile.html"><img src="images/profile.png"><span> Profile</span></a> </li>
+            </ul>
+        </nav>
+        <div id="overlay"></div>
+        <script src="script.js"></script>
+    </div>
+
+    <div class="wholePad">
+        <div class="coloredTop">
+            <h1 class="topicTitle">Ideal Gas Laws - Quiz 2</h1>
+        </div>
+        <div class="uncoloredBot">
+            <div class="questionContainer">
+                <h3 class="question">1. The principal quantum number (n) of an electron in an atom determines:</h3>
+            </div>
+
+            <div class="choicesCluster">
+                <div class="choiceContainer">
+                    <p class="choice">a. Its spin (+1/2 or -1/2)</p>
+                </div>
+                <div class="choiceContainer">
+                    <p class="choice">b. Its shape (s, p, d, f)</p>
+                </div>
+                <div class="choiceContainer">
+                    <p class="choice">c. Its energy level and distance from the nucleus CORRECT</p>
+                </div>
+                <div class="choiceContainer">
+                    <p class="choice">d. Its orientation within a subshell</p>
+                </div>
+            </div>
+
+            <div class="paginationBar">
+                <button class="pageBtn"><i class='bx bx-chevron-left'></i></button>
+                <button class="pageBtn">1</button>
+                <button class="pageBtn">2</button>
+                <button class="pageBtn">3</button>
+                <button class="pageBtn">4</button>
+                <button class="pageBtn">5</button>
+                <button class="pageBtn">6</button>
+                <button class="pageBtn">7</button>
+                <button class="pageBtn">8</button>
+                <button class="pageBtn">9</button>
+                <button class="pageBtn">10</button>
+                <button class="pageBtn"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </div>
+</body>
+
+</html>

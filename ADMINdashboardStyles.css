@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  z-index: 0;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #22100d;
+  --second-color: #685f78;
+  --main-color: #0ca79d;
+  --big-font: 3.2rem;
+  --h2-font: 2.6rem;
+  --p-font: 1.1rem;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+/*Start of navBar*/
+.navBar {
+  width: 20rem;
+  height: 100vh;
+  margin-bottom: 2rem;
+
+  position: fixed; /* Add sticky positioning */
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #176762;
+  color: whitesmoke;
+}
+
+.titleAbove {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Added for vertical centering */
+}
+.titleAbove h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.titleAbove p {
+  font-size: 1.5rem;
+}
+
+.navButtons {
+  display: -ms-inline-grid;
+}
+.navButtons a {
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: var(--p-font);
+  padding-left: 2rem;
+}
+.navButtons li {
+  width: 100%;
+  height: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.navButtons a.active {
+  background-color: #0ca79d;
+  border-radius: 10px;
+
+  width: 100%;
+  height: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.navButtons li:hover {
+  background-color: #0ca79d;
+  border-radius: 10px;
+}
+
+.signOutButton {
+  width: 100%;
+  height: 2.5rem;
+
+  margin-top: 32rem;
+  border: none;
+  border-radius: 5px;
+  font-size: var(--p-font);
+  background-color: #cf6464;
+  color: whitesmoke;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.signOutButton:hover {
+  background-color: #c6c6c6;
+}
+
+/*End of navBar*/
+
+/*Start of allContent*/
+.allContent {
+  margin: 2rem;
+  padding-left: 20rem;
+}
+
+/*Dropdown area*/
+.topicSelector {
+  width: fit-content;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  width: 500px;
+  background-color: #d9d9d9;
+  font-size: large;
+  color: #353535;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#dashboardh2 {
+  font-size: var(--h2-font);
+  color: #353535;
+  padding-left: 1rem;
+}
+/*End of topicSelector*/
+
+.dashboardTitle {
+  font-size: var(--big-font);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #353535;
+}
+.mainDBCluster {
+  margin-top: 2rem;
+  display: flex;
+}
+
+/*>SE First box. Students Enrolled*/
+.f1st_studentEnrolled {
+  width: 360px;
+  height: 150px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  background-color: #e9e9e9;
+  border-radius: 20px;
+}
+
+.f1st_BoxTitle {
+  /*For studentsEnrolled and gradeLevels*/
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+/*>SE Total Number of Enrollees*/
+.f1st_studentEnrolled h4 {
+  font-size: 3rem;
+  padding-left: 1rem;
+  color: #353535;
+}
+
+/*>SE Increase over 30 days*/
+.f1st_studentEnrolled p {
+  font-size: 1rem;
+  padding-left: 1rem;
+  color: #353535;
+}
+
+/*>SE COLORSTAT
+.usersOver30daysStat{
+  color: #53B85D;
+}
+
+^ Green for increase
+v Red for decrease
+
+.usersOver30daysStat{
+  color: #CF6464;
+}
+*/
+
+/*>GL Second box. Grade Levels Pie chart*/
+.f1st_gradeLevels {
+  width: 360px;
+  height: 150px;
+  margin-right: 1rem;
+  background-color: #e9e9e9;
+  border-radius: 20px;
+
+  font-size: 0.9rem;
+  color: #353535;
+  margin-right: 1rem;
+}
+
+.pie-chart-container {
+  width: 100%;
+  padding-right: 2.7rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.pie-chart {
+  width: 100px;
+  height: 100px;
+}
+
+.legend-color {
+  height: 0.9rem;
+  width: 0.9rem;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.legend-item {
+  display: flex;
+  margin-top: 0.2rem;
+  margin-right: 1rem;
+}
+
+.animate-pie-chart {
+  animation: animate-pie-chart 1s ease-in-out;
+}
+
+@keyframes animate-pie-chart {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/*>GL end of pie graph*/
+
+/*>AS Average quiz scores db*/
+.s2ndBox {
+  width: 360px;
+  height: total;
+  margin-right: 1rem;
+  background-color: #a5e3df;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.s2nd_graphArea {
+  width: 314px;
+  height: 240px;
+  margin-top: 1.5rem;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.laman {
+  width: 100%;
+  height: 100%;
+  padding-top: 5rem;
+  align-self: baseline;
+}
+
+/*>AS End of average scores*/
+
+.BoxTitle {
+  /*For >AS and >WR*/
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  color: #353535;
+}
+
+/*>WR Start of watch time rate*/
+.t3rdBox {
+  width: 360px;
+  height: total;
+  margin-right: 1rem;
+  background-color: #0ca79d;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t3rd_graphArea {
+  width: 314px;
+  height: 240px;
+  margin-top: 1.5rem;
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 1025px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 110vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 170px 30px;
+    transition: all 0.4s ease;
+  }
+  .navbar a {
+    display: block;
+    margin: 1.3rem 0;
+    color: var(--bg-color);
+  }
+  .navbar a:hover {
+    color: var(--bg-color);
+    transform: translateY(-5px);
+  }
+  .navbar.open {
+    right: 0;
+  }
+}
+
+@media (max-width: 890px) {
+  .home {
+    height: 150vh;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .home-text {
+    padding-top: 20px;
+  }
+  .home-img {
+    display: none;
+  }
+  .home-img img {
+    height: auto;
+    width: 100%;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-img {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    height: 120vh;
+  }
+}

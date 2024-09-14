@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="quizStyles.css" />
+    <link rel="stylesheet" href="learnpageOpenTopic.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Acachemi | Quiz - TOPICTITLE
+    </title>
+</head>
+
+<body>
+    <!--Start of Navbar/Sidebar-->
+    <div class="sidebarSection">
+        <nav id="sidebar">
+            <button id="toggle-button">
+                <img src="images/burger.png" alt="Menu">
+            </button>
+            <ul class="nav-list">
+                <li id="home"><a href="home.html"><img src="images/home.png"><span> Home</span></a> </li>
+                <li id="learn"><a href="search.html"><img src="images/learn.png"> <span> Learn</span></a> </li>
+                <li id="quiz"><a href="settings.html"><img src="images/quiz.png"><span> Quiz</span></a> </li>
+                <li id="questions"><a href="messages.html"><img src="images/questions.png"><span> Questions</span></a>
+                </li>
+                <li id="profile"><a href="profile.html"><img src="images/profile.png"><span> Profile</span></a> </li>
+            </ul>
+        </nav>
+        <div id="overlay"></div>
+        <script src="script.js"></script>
+    </div>
+    <!--End of Navbar/Sidebar-->
+
+    <!--Start of Lecture section-->
+    <div class="lectureSection">
+        <div class="titleContainer">
+            <h1 class="titleOfLecture">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, aliquid
+                voluptatibus. Et distinctio laboriosam repellat.</h1>
+        </div>
+        <div class="contentSection">
+            <div class="videoContainer"></div>
+
+            <div class="majorTopicsContainer">
+                <h3 class="majorTopicsTitle">Major Topics</h3>
+
+                <div class="skipTopicContainer">
+                    <button class="skipToTopicBtn"><i class='bx bx-play'></i>Lorem ipsum dolor sit am
+                        consectetur.</button>
+                </div>
+                <div class="skipTopicContainer">
+                    <button class="skipToTopicBtn"><i class='bx bx-play'></i>Lorem ipsum dolor sit am
+                        consectetur.</button>
+                </div>
+                <div class="skipTopicContainer">
+                    <button class="skipToTopicBtn"><i class='bx bx-play'></i>Lorem ipsum dolor sit am
+                        consectetur.</button>
+                </div>
+                <div class="skipTopicContainer">
+                    <button class="skipToTopicBtn"><i class='bx bx-play'></i>Lorem ipsum dolor sit am
+                        consectetur.</button>
+                </div>
+                <div class="skipTopicContainer">
+                    <button class="skipToTopicBtn"><i class='bx bx-play'></i>Lorem ipsum dolor sit am
+                        consectetur.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Whole container for the pad, including the colored top and uncolored bottom.-->
+    <div class="wholePad">
+        <!--Colored section, Topic title-->
+        <div class="coloredTop">
+            <h2 class="topicTitle">Ideal Gas Laws</h2>
+        </div>
+        <!--Uncolored section, start of contents-->
+        <div class="uncoloredBot">
+
+            <!--Quiz 1-->
+            <div class="quizRows">
+                <div class="isQuizDone" id="isQuizDone1" data-done="true"></div>
+                <p class="quizNum">Quiz 1</p>
+                <div class="scoreRating" id="scoreRating1" data-done="true">9/10</div>
+                <button class="answerQuizBtn" id="answerQuizBtn1" quiz-done="true">Answer Quiz</button>
+            </div>
+            <hr>
+
+            <!--Quiz 2-->
+            <div class="quizRows">
+                <div class="isQuizDone" id="isQuizDone2"></div>
+                <p class="quizNum">Quiz 2</p>
+                <div class="scoreRating" id="scoreRating2"></div>
+                <button class="answerQuizBtn" id="answerQuizBtn2">Answer Quiz</button>
+            </div>
+            <hr>
+
+            <!--Quiz 2-->
+            <div class="quizRows">
+                <div class="isQuizDone" id="isQuizDone3"></div>
+                <p class="quizNum">Quiz 3</p>
+                <div class="scoreRating" id="scoreRating3"></div>
+                <button class="answerQuizBtn" id="answerQuizBtn3">Answer Quiz</button>
+            </div>
+            <hr>
+
+            <!--Quiz 4-->
+            <div class="quizRows">
+                <div class="isQuizDone" id="isQuizDone4"></div>
+                <p class="quizNum">Quiz 4</p>
+                <div class="scoreRating" id="scoreRating4"></div>
+                <button class="answerQuizBtn" id="answerQuizBtn4">Answer Quiz</button>
+            </div>
+            <hr>
+
+            <!--Quiz 5-->
+            <div class="quizRows">
+                <div class="isQuizDone" id="isQuizDone5"></div>
+                <p class="quizNum">Quiz 5</p>
+                <div class="scoreRating" id="scoreRating5"></div>
+                <button class="answerQuizBtn" id="answerQuizBtn5">Answer Quiz</button>
+            </div>
+
+            <!--End of uncolored section. Add or remove quizRows as needed.-->
+        </div>
+        <!--End of wholePad section.-->
+    </div>
+</body>
+
+</html>

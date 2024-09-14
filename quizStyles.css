@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat ", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  z-index: 0;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #22100d;
+  --second-color: #685f78;
+  --main-color: #0ca79d;
+  --big-font: 3.8rem;
+  --h2-font: 2.6rem;
+  --p-font: 1.1rem;
+}
+
+html {
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  top: 3rem;
+  left: 7rem;
+}
+
+.userWelcomeMsg {
+  width: fit-content;
+  position: relative;
+  border-radius: 10px;
+  background-color: #59d9d1;
+  height: 85px;
+  width: 500px;
+}
+
+.welcomeText {
+  padding-top: 1.3rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 30px;
+  height: 85px;
+  font-family: Montserrat;
+  color: #f6f6f6;
+  text-align: center;
+  align-items: center;
+}
+
+.contentTitle {
+  width: fit-content;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: bolder;
+  font-family: Montserrat;
+  padding-bottom: 1rem;
+  color: #121212;
+}
+
+.contentTopRow {
+  margin-top: 1rem;
+  width: fit-content;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+}
+
+.contentBotRow {
+  margin-top: 2rem;
+  width: fit-content;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+}
+
+.quizContainer {
+  width: 700px;
+  height: 210px;
+  background-color: rgb(242, 242, 242);
+  outline: 2px black;
+  border-radius: 10px;
+  stroke-width: 200px;
+  transition: all 0.4s ease;
+  margin-right: 2rem;
+}
+.quizContainer > p {
+  position: absolute;
+  width: fit-content;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.coloredSection {
+  width: 700px;
+  height: 136px;
+  background-color: #0ca79d;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.quizTitle {
+  font-size: 28px;
+  color: #f6f6f6;
+  font-weight: bold;
+  font-family: Montserrat;
+  white-space: wrap;
+  overflow: hidden;
+  max-width: 650;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  line-height: 1.5;
+}
+
+.uncoloredSection {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center; /* Align elements vertically */
+}
+
+.quizTopicsTime {
+  font-size: 18px;
+  color: #444444;
+  font-weight: bold;
+  font-family: Montserrat;
+  white-space: wrap;
+  overflow: hidden;
+  max-width: 650;
+  border-left: 10rem;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  flex-wrap: wrap;
+  text-align: bottom;
+}
+
+.startQuizButton {
+  background-color: #176762;
+  color: #f6f6f6;
+  font-style: bold;
+  padding-right: 2rem;
+  padding-left: 10rem;
+  border-radius: 05%;
+  border: 0;
+  height: 40px;
+  width: 185px;
+
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  animation-duration: 0.4ms;
+  margin-right: 2rem;
+}
+
+.startQuizButton:hover {
+  background-color: #444444;
+  color: #f6f6f6;
+}

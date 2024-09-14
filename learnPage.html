@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Page</title>
+    <link rel="stylesheet" href="learnStyles.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="userWelcomeMsg">
+            <div class="welcomeText">
+                <h3>Welcome *NameOfUser!</h3>
+            </div>
+        </div>
+        <div class="course">
+            <h1>Available Course</h1>
+        </div>
+        <div class="container">
+            <nav id="sidebar">
+                <button id="toggle-button">
+                    <img src="images/burger.png" alt="Menu">
+                </button>
+                <ul class="nav-list">
+                    <li id="home"><a href="home.html"><img src="images/home.png"><span> Home</span></a> </li>
+                    <li id="learn"><a href="search.html"><img src="images/learn.png"> <span> Learn</span></a> </li>
+                    <li id="quiz"><a href="settings.html"><img src="images/quiz.png"><span> Quiz</span></a> </li>
+                    <li id="questions"><a href="messages.html"><img src="images/questions.png"><span>
+                                Questions</span></a> </li>
+                    <li id="profile"><a href="profile.html"><img src="images/profile.png"><span> Profile</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="container" class="flex-container">
+            <!-- Example videos -->
+            <button class="video-button">
+                <img class="thumbnail" src="Images/ideal_gas_law.png" alt="Ideal Gas Law">
+                <div class="title">Ideal Gas Law</div>
+                <div class="description">1 Hour 30 minutes </div>
+            </button>
+            <!-- Add more videos as needed -->
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
